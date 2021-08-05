@@ -2,7 +2,7 @@ console.log("Ben's Tamagotchi")
 
 // START THE GAME WITH PROMPT
 const promptBox = () => {
-	let userInput = prompt("Please enter your Pizzagotchi name!")
+	userInput = prompt("Please enter your Pizzagotchi name!")
 }
 
 //ATTRIBUTES OF TAMAGOTCHI
@@ -34,13 +34,47 @@ class Tamagotchi{
 	}
 	getDies(){
 		this.alive = false;
-		clearInterval(game.currentTime);
-		game.death();
+		clearInterval(begin.timeInt);
+		begin.death();
 	}
 }
 
 
+// Setup a new game
+
+
+
+
+// const begin = {
+// 	timer: 0,
+// 	player: null,
+// 	createName(name) {
+// 		const pizza = new Tamagotchi(name);
+// 		this.player = pizza;
+// 		}
+// 	},
+
+// 	timer(){
+// 		this.timeInt = setInterval(() => {
+// 			this.timer++
+// 			if(this.timer % 30 === 0){
+// 				this.player.getAge()
+// 				if(this.player.age === 5){
+// 					}
+
+// 				}
+// 			}
+// 			if(this.timer % 15 === 0)
+// 		})
+// 	}
+
 //Increase pet's age every X minutes //***COMMIT***
+function age(name){
+	return window.setInterval (function(){
+		name.getAge()
+		console.log(name.age)
+	},1000)
+}
 
 
 //Increase pet's hunger hunger //***COMMIT***
@@ -56,9 +90,15 @@ class Tamagotchi{
 
 //Have burgergotchi appear at night.
 
-
+const petAlive = window.setInterval(function(){
+	if ()
+})
 // const sleep = document.getElementById()
 // getName()
 
-// const start = new Tamagotchi(userInput)
+let userInput = " "
 promptBox()
+const start = new Tamagotchi(userInput)
+let ageVariable = age(start)
+
+
