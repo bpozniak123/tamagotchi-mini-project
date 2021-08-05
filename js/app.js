@@ -42,9 +42,6 @@ class Tamagotchi{
 
 // Setup a new game
 
-
-
-
 // const begin = {
 // 	timer: 0,
 // 	player: null,
@@ -76,13 +73,29 @@ function age(name){
 	},1000)
 }
 
-
 //Increase pet's hunger hunger //***COMMIT***
+function eat(){
+	return window.setInterval (function(){
+		name.getHunger()
+		console.log(this.hunger)
+	},1000)
+}
 
 //Increase sleepiness //***COMMIT***
+function sleep(){
+	return window.setInterval (function(){
+		name.getSleep()
+		console.log(this.sleep)
+	},1000)
+}
 
 //Increase Boredom //***COMMIT***
-
+function bored(){
+	return window.setInterval (function(){
+		name.getBoredom()
+		console.log(this.boredom)
+	},1000)
+}
 
 //Pet dies if hunger, boredom, or sleepiness reaches 0 //***COMMIT***
 
