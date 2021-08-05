@@ -2,3 +2,21 @@ body{
 	background-color: silver;
 	transition: background color: gradiant;
 }
+
+#imgContainer{
+	margin: auto;
+}
+
+.pizza{
+	display: flex;
+	justify-content: flex-end;
+}
+
+#burgerContainer{
+	margin: auto;
+}
+
+.burger{
+	max-width: 100%;
+	height: auto;
+}
