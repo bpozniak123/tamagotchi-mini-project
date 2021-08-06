@@ -1,22 +1,69 @@
+h1{
+	text-align: center;
+	font-family: cursive;
+	font-size: 50px;
+	color: Red;
+}
+
 body{
 	background-color: silver;
-	transition: background color: gradiant;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
-#imgContainer{
-	margin: auto;
-}
-
-.pizza{
+#device{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
+	height: 600px;
+	width:  600px;
+	background-color: green;
+	margin:  0 auto;
+	border-radius: 4%;
+	display: block;
 }
 
-#burgerContainer{
-	margin: auto;
+#screen{
+	/*display:  flex;*/
+	height: 525px;
+	width: 525px;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 8%;
+	padding: 20px;
+	/*align-items: flex-end;*/
 }
 
-.burger{
-	max-width: 100%;
-	height: auto;
+#attributesContainer{
+	/*background-color: red;*/
+	background: linear-gradient(to left top, white, red);
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-evenly;
+	padding: 50px;
+	/*flex-direction: column;*/
+	/*margin: auto;*/
 }
+
+.imgContainer img{
+	display: flex;
+	align-items: flex-start;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	/*margin-bottom: 200px;*/
+}
+
+#buttons{
+	background: linear-gradient(to right bottom, white, red);
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	padding: 50px;
+	/*margin-bottom: 50px;*/
+}
+/*img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+*/
