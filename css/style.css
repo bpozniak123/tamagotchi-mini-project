@@ -12,14 +12,14 @@ body{
 }
 
 #device{
-	display: flex;
+	/*display: flex;*/
 	justify-content: space-around;
 	height: 600px;
 	width:  600px;
 	background-color: green;
 	margin:  0 auto;
 	border-radius: 4%;
-	display: block;
+	/*display: block;*/
 }
 
 #screen{
@@ -27,8 +27,9 @@ body{
 	height: 525px;
 	width: 525px;
 	background-color: white;
-	margin: 0 auto;
-	border-radius: 8%;
+	margin: auto;
+	margin-top: 50px;
+	border-radius: 7%;
 	padding: 20px;
 	/*align-items: flex-end;*/
 }
@@ -50,8 +51,13 @@ body{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 30px;
+	animation:  animateImg 1s linear infinite;
 	/*margin-bottom: 200px;*/
 }
+
+/*@keyframes animateImg {
+	0%(margin-right: -100px)
+	100%(margin-right: 30%)*/
 
 #buttons{
 	background: linear-gradient(to right bottom, white, red);
@@ -60,6 +66,11 @@ body{
 	justify-content: space-around;
 	padding: 50px;
 	/*margin-bottom: 50px;*/
+}
+
+#buttons: active{
+	transform: translateY(2px);
+}
 }
 /*img{
 	display: block;
