@@ -3,7 +3,7 @@ console.log("Ben's Tamagotchi")
 // START THE GAME WITH PROMPT
 // const promptBox = () => {
 	// let userInput = prompt("Please enter your Pizzagotchi name!")
-// // }
+// }
 
 //ATTRIBUTES OF TAMAGOTCHI
 class Tamagotchi{
@@ -25,35 +25,38 @@ class Tamagotchi{
 	    boredom.textContent = `Boredom: ${this.boredom}`
 	     let age = document.querySelector('#Age')
 	    age.textContent = `Age: ${this.age}`
-  	};
+  	}
 	// getName(){
 	// 	let displayName = document.querySelector('h2')
 	// 	displayName.textContent = userInput
 	// };
 	getAge(){
 		this.age++
-	};
+	}
 	getHunger(){
 		this.hunger++
-	};
+	}
 	getSleep(){
 		this.sleep++
-	};
+	}
 	getBoredom(){
 		this.boredom++
-	};
+	}
 	getDies(){
-		if(this.age===10 || this.hunger===10 || this.sleep===10 || this.boredom===10){
-			this.dies == true
-			alert("GAME OVER!")
-			location.reload()
-		}
-	};
+		// this.dies == true
+		// clearInterval(newGame.age())
+		
+		// if(this.age===10 || this.hunger===10 || this.sleep===10 || this.boredom===10){
+			// this.dies == true
+		// 	alert("GAME OVER!")
+		// 	location.reload()
+	}
 }
+
 //-----Setup a new game---------
 // class Start1 {
-	function startGame(){
-		const newGame = new Tamagotchi(userInput)
+	// function startGame(){ //<-- DO NOT UNCOMMENT!!!
+	const newGame = new Tamagotchi("userInput")
 		// let ageVariable = age(start)
 			newGame.ageID = age()
 			newGame.eatID = eat()
@@ -70,7 +73,10 @@ class Tamagotchi{
 			newGame.getAge();
 			newGame.updateAttributes()
 			// newGame.age ++
-			console.log(newGame.age) 
+			console.log(this.age) 
+			// if (this.age >= 1){
+			// 	clearInterval(age())
+			// }
 		},2000)
 	}
 
@@ -106,19 +112,33 @@ class Tamagotchi{
 	}
 
 // End Game
-	function end(){
-		clearTimeout(this.getDies)
-	}
-	
+
+	// function end(){
+	// 	if(this.age===10 || this.hunger===10 || this.sleep===10 || this.boredom===10){
+	// 		newGame.gameTimer = newGame.getDies()
+	// 		alert("GAME OVER!")
+	// 		location.reload()
+	// }
 //---------Button Functions--------
 
+//Start Button
+// const startButton = document.querySelector("#start")
+// startButton.addEventListener('click', (event)=>{
+// 	let posX = Math.ceil(Math.random()*50)
+// 	let posY = Math.ceil(Math.random()*50)
+// 	document.getElementById(".imgContainer").style.left = `${posX}`
+// 	document.getElementById(".imgContainer").style.top = `${posY}`
+// })
+
+// startButton.onclick = function(){
+// 	interval = setInterval(changePosition, 500);
+// }
 //FEED ME --> MORPH pizza to strawberry
 const feedMe = document.querySelector("#feed")
 feedMe.addEventListener('click', (event) => {
 	let strawberry = document.querySelector("img")
-	strawberry.setAttribute("src", "Images/newstrawb.png")
-	startGame.eat()
-
+	strawberry.setAttribute("src", "Images/newstrawb.png") 
+	// startGame.eat()
 })
 
 //Animate pet
@@ -134,30 +154,13 @@ move.addEventListener('click', (event) => {
 const lightsOut = document.querySelector("#lights")
 lightsOut.addEventListener('click', (event) => {
 	let darkBackground = document.querySelector("#screen")
-	darkBackground.style.backgroundColor = 'navy'
-	document.body.style.backgroundImage = "url('Images/NorthernLights.jpeg')"
-	
+	darkBackground.style.backgroundColor = 'navy' 
+	document.body.style.backgroundImage = "url('Images/north.jpeg')"
+	// document.body.style.backgroundImage = "url('Images/NorthernLights.jpeg')"
+
 	let changeDevice = document.querySelector("#device")
 	changeDevice.style.backgroundColor = 'black'
-	startGame.sleep()
-})
-
-
-//---------End Game---------
-// /Pet dies if hunger, boredom, or sleepiness reaches 0 //***COMMIT***
-// const petAlive = (function(){
-// 	if age==10 || hunger=10 || sleep==10 || boredom==10{
-// 		this.alive == true
-// 		alert("GAME OVER!")
-// 	}
-// })
-
-//---------Setups-----------
-// const sleep = document.getElementById()
-// getName()
-
-// let userInput = " "
+	// startGame.sleep()
+ })
+// }
 // promptBox()
-// const start = new Tamagotchi(userInput)
-// let ageVariable = age(start)
-
